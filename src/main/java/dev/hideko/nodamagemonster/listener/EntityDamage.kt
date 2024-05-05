@@ -15,7 +15,7 @@ class EntityDamage: Listener {
         if(e.damager.type == EntityType.PLAYER) return
         val entities = NoDamageMonster.configure.getStringList("mob")
         if(entities.contains(e.damager.type.toString())) {
-//            e.isCancelled = true
+            e.isCancelled = true
             e.damage = 0.0
             e.entity.velocity = e.damager.location.direction.multiply(0.5)
         }
