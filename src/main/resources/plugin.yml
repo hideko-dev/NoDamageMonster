@@ -1,0 +1,4 @@
+name: NoDamageMonster
+version: '${project.version}'
+main: dev.hideko.nodamagemonster.NoDamageMonster
+api-version: '1.20'
